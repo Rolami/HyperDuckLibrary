@@ -14,7 +14,7 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="BorrowId" />
             <div class="form-group">
-                <label asp-for="Fk_BookId" class="control-label"></label>
+                <label asp-for="Fk_BookId" class="control-label">Book</label>
                 <select asp-for="Fk_BookId" class="form-control" asp-items="ViewBag.Fk_BookId"></select>
                 <span asp-validation-for="Fk_BookId" class="text-danger"></span>
             </div>

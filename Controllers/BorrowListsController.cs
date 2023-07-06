@@ -49,8 +49,8 @@ namespace HyperDuckLibrary.Controllers
         // GET: BorrowLists/Create
         public IActionResult Create()
         {
-            ViewData["Fk_BookId"] = new SelectList(_context.Book, "BookId", "Author");
-            ViewData["Fk_CustomerId"] = new SelectList(_context.Customer, "CustomerId", "Email");
+            ViewData["Fk_BookId"] = new SelectList(_context.Book, "BookId", "BookName");
+            ViewData["Fk_CustomerId"] = new SelectList(_context.Customer, "CustomerId", "FullName");
             return View();
         }
 
@@ -63,12 +63,21 @@ namespace HyperDuckLibrary.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (borrowList.BorrowedDate.HasValue)
+                {
+                    borrowList.DueDate = borrowList.BorrowedDate.Value.AddDays(28);
+                }
+                if (borrowList.IsReturned == null)
+                {
+                    borrowList.IsReturned = false;
+                }
                 _context.Add(borrowList);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["Fk_BookId"] = new SelectList(_context.Book, "BookId", "Author", borrowList.Fk_BookId);
-            ViewData["Fk_CustomerId"] = new SelectList(_context.Customer, "CustomerId", "Email", borrowList.Fk_CustomerId);
+    
+            ViewData["Fk_BookId"] = new SelectList(_context.Book, "BookId", "BookName", borrowList.Fk_BookId);
+            ViewData["Fk_CustomerId"] = new SelectList(_context.Customer, "CustomerId", "FullName", borrowList.Fk_CustomerId);
             return View(borrowList);
         }
 
@@ -85,8 +94,8 @@ namespace HyperDuckLibrary.Controllers
             {
                 return NotFound();
             }
-            ViewData["Fk_BookId"] = new SelectList(_context.Book, "BookId", "Author", borrowList.Fk_BookId);
-            ViewData["Fk_CustomerId"] = new SelectList(_context.Customer, "CustomerId", "Email", borrowList.Fk_CustomerId);
+            ViewData["Fk_BookId"] = new SelectList(_context.Book, "BookId", "BookName", borrowList.Fk_BookId);
+            ViewData["Fk_CustomerId"] = new SelectList(_context.Customer, "CustomerId", "FullName", borrowList.Fk_CustomerId);
             return View(borrowList);
         }
 
