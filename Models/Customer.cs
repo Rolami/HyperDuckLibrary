@@ -6,7 +6,7 @@ namespace HyperDuckLibrary.Models
     public class Customer
     {
             [Key]
-            public int CustomerId { get; set; }
+            public int CustomerId { get; set; } = 0;
 
             [Required]
             [MaxLength(20)]
@@ -29,7 +29,7 @@ namespace HyperDuckLibrary.Models
             [Required]
             public string UserName { get; set; }
 
-           public virtual ICollection<BorrowList>? BorrowList { get; set; }
+        public virtual ICollection<BorrowList>? BorrowList { get; set; }
     }
 
 }

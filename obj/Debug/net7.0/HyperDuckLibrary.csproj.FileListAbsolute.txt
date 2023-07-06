@@ -252,3 +252,6 @@ C:\Users\dream\source\repos\HyperDuckLibrary\obj\Debug\net7.0\refint\HyperDuckLi
 C:\Users\dream\source\repos\HyperDuckLibrary\obj\Debug\net7.0\HyperDuckLibrary.pdb
 C:\Users\dream\source\repos\HyperDuckLibrary\obj\Debug\net7.0\HyperDuckLibrary.genruntimeconfig.cache
 C:\Users\dream\source\repos\HyperDuckLibrary\obj\Debug\net7.0\ref\HyperDuckLibrary.dll
+C:\Users\dream\source\repos\HyperDuckLibrary\bin\Debug\net7.0\Data\Books.json
+C:\Users\dream\source\repos\HyperDuckLibrary\bin\Debug\net7.0\Data\Customer.json
+C:\Users\dream\source\repos\HyperDuckLibrary\bin\Debug\net7.0\Data\Borrowed.json

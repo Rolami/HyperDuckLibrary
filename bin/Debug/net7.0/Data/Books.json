@@ -1,0 +1,92 @@
+[
+  {
+    "BookId": 1,
+    "BookName": "The Great Gatsby",
+    "BookDescription": "A story of wealth, love, and the American Dream",
+    "Author": "F. Scott Fitzgerald"
+  },
+  {
+    "BookId": 2,
+    "BookName": "To Kill a Mockingbird",
+    "BookDescription": "A powerful exploration of racial injustice in the American South",
+    "Author": "Harper Lee"
+  },
+  {
+    "BookId": 3,
+    "BookName": "Pride and Prejudice",
+    "BookDescription": "A classic tale of love, society, and overcoming prejudices",
+    "Author": "Jane Austen"
+  },
+  {
+    "BookId": 4,
+    "BookName": "1984",
+    "BookDescription": "A dystopian novel depicting a totalitarian society",
+    "Author": "George Orwell"
+  },
+  {
+    "BookId": 5,
+    "BookName": "The Catcher in the Rye",
+    "BookDescription": "A coming-of-age story about a teenager struggling with society and identity",
+    "Author": "J.D. Salinger"
+  },
+  {
+    "BookId": 6,
+    "BookName": "Moby Dick",
+    "BookDescription": "A gripping tale of obsession and revenge at sea",
+    "Author": "Herman Melville"
+  },
+  {
+    "BookId": 7,
+    "BookName": "To the Lighthouse",
+    "BookDescription": "A pioneering modernist novel exploring themes of time and perception",
+    "Author": "Virginia Woolf"
+  },
+  {
+    "BookId": 8,
+    "BookName": "Brave New World",
+    "BookDescription": "A dystopian vision of a futuristic society",
+    "Author": "Aldous Huxley"
+  },
+  {
+    "BookId": 9,
+    "BookName": "The Adventures of Huckleberry Finn",
+    "BookDescription": "A classic American novel following the journey of a young boy and a runaway slave",
+    "Author": "Mark Twain"
+  },
+  {
+    "BookId": 10,
+    "BookName": "The Lord of the Rings",
+    "BookDescription": "An epic fantasy quest to destroy a powerful ring",
+    "Author": "J.R.R. Tolkien"
+  },
+  {
+    "BookId": 11,
+    "BookName": "Jane Eyre",
+    "BookDescription": "A compelling story of love, independence, and societal expectations",
+    "Author": "Charlotte Brontë"
+  },
+  {
+    "BookId": 12,
+    "BookName": "The Grapes of Wrath",
+    "BookDescription": "An iconic novel depicting the hardships of the Great Depression",
+    "Author": "John Steinbeck"
+  },
+  {
+    "BookId": 13,
+    "BookName": "The Picture of Dorian Gray",
+    "BookDescription": "A philosophical novel exploring the pursuit of pleasure and the consequences of vanity",
+    "Author": "Oscar Wilde"
+  },
+  {
+    "BookId": 14,
+    "BookName": "Crime and Punishment",
+    "BookDescription": "A psychological thriller revolving around guilt, morality, and redemption",
+    "Author": "Fyodor Dostoevsky"
+  },
+  {
+    "BookId": 15,
+    "BookName": "Frankenstein",
+    "BookDescription": "A chilling tale of science, creation, and the consequences of playing god",
+    "Author": "Mary Shelley"
+  }
+]

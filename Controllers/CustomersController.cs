@@ -22,9 +22,9 @@ namespace HyperDuckLibrary.Controllers
         // GET: Customers
         public async Task<IActionResult> Index()
         {
-              return _context.Customer != null ? 
-                          View(await _context.Customer.ToListAsync()) :
-                          Problem("Entity set 'HyperDuckLibraryContext.Customer'  is null.");
+            return _context.Customer != null ?
+                        View(await _context.Customer.ToListAsync()) :
+                        Problem("Entity set 'HyperDuckLibraryContext.Customer'  is null.");
         }
 
         // GET: Customers/Details/5
@@ -150,14 +150,14 @@ namespace HyperDuckLibrary.Controllers
             {
                 _context.Customer.Remove(customer);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool CustomerExists(int id)
         {
-          return (_context.Customer?.Any(e => e.CustomerId == id)).GetValueOrDefault();
+            return (_context.Customer?.Any(e => e.CustomerId == id)).GetValueOrDefault();
         }
     }
 }

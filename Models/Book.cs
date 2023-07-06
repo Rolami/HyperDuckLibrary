@@ -1,11 +1,13 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HyperDuckLibrary.Models
 {
     public class Book
     {
         [Key]
-        public int BookId { get; set; }
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int BookId { get; set; } = 0;
 
         [Required]
         public string BookName { get; set; }
@@ -14,12 +16,6 @@ namespace HyperDuckLibrary.Models
         [Required]
         public string Author { get; set; }
 
-
-
-        public DateTime? BorrowedDate { get; set; }
-        public DateTime? ReturnedDate { get; set; }
-
-        public bool? IsReturned { get; set; }
 
         public virtual ICollection<BorrowList>? BorrowList { get; set; }
 

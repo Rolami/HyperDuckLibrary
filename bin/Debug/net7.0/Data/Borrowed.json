@@ -1,0 +1,107 @@
+[
+  {
+    "BorrowId": 1,
+    "Fk_BookId": 1,
+    "Fk_CustomerId": 15,
+    "BorrowedDate": "2023-04-03",
+    "IsReturned": true
+  },
+  {
+    "BorrowId": 2,
+    "Fk_BookId": 2,
+    "Fk_CustomerId": 14,
+    "BorrowedDate": "2022-09-16",
+    "IsReturned": true
+  },
+  {
+    "BorrowId": 3,
+    "Fk_BookId": 3,
+    "Fk_CustomerId": 13,
+    "BorrowedDate": "2023-03-27",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 4,
+    "Fk_BookId": 4,
+    "Fk_CustomerId": 12,
+    "BorrowedDate": "2022-10-07",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 5,
+    "Fk_BookId": 5,
+    "Fk_CustomerId": 11,
+    "BorrowedDate": "2023-05-01",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 6,
+    "Fk_BookId": 6,
+    "Fk_CustomerId": 10,
+    "BorrowedDate": "2022-08-11",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 7,
+    "Fk_BookId": 7,
+    "Fk_CustomerId": 9,
+    "BorrowedDate": "2022-12-30",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 8,
+    "Fk_BookId": 8,
+    "Fk_CustomerId": 8,
+    "BorrowedDate": "2022-11-03",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 9,
+    "Fk_BookId": 9,
+    "Fk_CustomerId": 7,
+    "BorrowedDate": "2023-06-17",
+    "IsReturned": true
+  },
+  {
+    "BorrowId": 10,
+    "Fk_BookId": 10,
+    "Fk_CustomerId": 6,
+    "BorrowedDate": "2022-10-20",
+    "IsReturned": true
+  },
+  {
+    "BorrowId": 11,
+    "Fk_BookId": 11,
+    "Fk_CustomerId": 5,
+    "BorrowedDate": "2023-01-05",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 12,
+    "Fk_BookId": 12,
+    "Fk_CustomerId": 4,
+    "BorrowedDate": "2023-03-07",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 13,
+    "Fk_BookId": 13,
+    "Fk_CustomerId": 3,
+    "BorrowedDate": "2022-09-20",
+    "IsReturned": false
+  },
+  {
+    "BorrowId": 14,
+    "Fk_BookId": 14,
+    "Fk_CustomerId": 2,
+    "BorrowedDate": "2023-04-22",
+    "IsReturned": true
+  },
+  {
+    "BorrowId": 15,
+    "Fk_BookId": 15,
+    "Fk_CustomerId": 1,
+    "BorrowedDate": "2023-01-31",
+    "IsReturned": true
+  }
+]
