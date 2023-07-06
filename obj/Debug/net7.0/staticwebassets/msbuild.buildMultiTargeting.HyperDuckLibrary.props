@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\HyperDuckLibrary.props" />
+</Project>

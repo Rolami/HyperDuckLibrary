@@ -1,0 +1,71 @@
+﻿@model IEnumerable<HyperDuckLibrary.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                BookName
+                @*@Html.DisplayNameFor(model => model.BookName)*@
+            </th>
+            <th>
+                Description
+                @*@Html.DisplayNameFor(model => model.BookDescription)*@
+            </th>
+            <th>
+                Author
+                @*@Html.DisplayNameFor(model => model.Author)*@
+            </th>
+            <th>
+                Borrow Date
+                @*@Html.DisplayNameFor(model => model.BorrowedDate)*@
+            </th>
+            <th>
+                Returned
+                @*@Html.DisplayNameFor(model => model.ReturnedDate)*@
+            </th>
+            <th>
+                Returned
+                @*@Html.DisplayNameFor(model => model.IsReturned)*@
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BookDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Author)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BorrowedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReturnedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IsReturned)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.BookId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
