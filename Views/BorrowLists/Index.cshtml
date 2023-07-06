@@ -16,7 +16,7 @@
                 @Html.DisplayNameFor(model => model.Books)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Customers)
+                Customer
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.BorrowedDate)
@@ -25,7 +25,7 @@
                 @Html.DisplayNameFor(model => model.DueDate)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IsReturned)
+                Has Returned
             </th>
             <th></th>
         </tr>
@@ -34,10 +34,10 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                @Html.DisplayFor(modelItem => item.Books.Author)
+                @Html.DisplayFor(modelItem => item.Books.BookName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Customers.Email)
+                    @Html.DisplayFor(modelItem => item.Customers.FullName)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.BorrowedDate)
